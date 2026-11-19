@@ -1,0 +1,25 @@
+{
+  "name": "chrono-loop",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build:client": "vite build",
+    "build:server": "vite build --config vite.server.config.ts",
+    "build": "tsc --noEmit && npm run build:client && npm run build:server",
+    "verify:levels": "node scripts/verify_levels.mjs",
+    "preview": "vite preview",
+    "devvit:playtest": "devvit playtest",
+    "devvit:upload": "devvit upload"
+  },
+  "dependencies": {
+    "@devvit/web": "^0.15.4"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "devvit": "^0.15.4",
+    "typescript": "^5.7.2",
+    "vite": "^5.4.21"
+  }
+}
